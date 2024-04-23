@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ExoTP_Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login">Login</string>
+    <string name="create">create an account</string>
+    <string name="social">social login</string>
+    <string name="register">sign up</string>
+    <string name="Sign">SIGN IN ?</string>
+    <string name="Back">Back</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:paddingTop="22dp"
+            android:text="Welcome"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:fontFamily="@font/dancing_bold"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="22dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/baseline_account_circle_24"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/Username"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#0FFFFFFF"
+
+            app:boxBackgroundColor="#0FFFFFFF">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="9dp"
+                android:textColor="#FFFFFF"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:id="@+id/username1"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingTop="1dp"
+            android:layout_margin="10dp"
+            android:hint="@string/Password"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#0FFFFFFF"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            app:boxBackgroundColor="#0FFFFFFF">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="9dp"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"
+                android:id="@+id/password1"
+                android:textSize="20sp"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:fontFamily="@font/dm_medium"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#0277BD"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:id="@+id/loginBtn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/create"
+            android:fontFamily="@font/dm_medium"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:onClick="SignUp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/social"
+            android:fontFamily="@font/dm_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            >
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook"/>
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google"/>
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/x"/>
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linkedin"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
